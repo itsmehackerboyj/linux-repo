@@ -1,0 +1,14 @@
+This is reset for sddm configure
+
+* dpkg -l | grep sddm
+* sudo apt update
+* sudo apt install --reinstall sddm
+* sudo apt update --fix-missing
+* sudo apt install -f
+* sudo apt clean
+* sudo apt autoremove --purge sddm
+* sudo dpkg-reconfigure sddm
+* sudo systemctl restart sddm
+* journalctl -xe | grep sddm
+
+
