@@ -1,0 +1,15 @@
+How to zip and unzip in war file 
+
+
+First u git pull which file u unzip war file
+
+After u mkdir because the files are unzip extract all files so 
+u mkdir
+
+
+after u use this cmd
+  unzip yourfilename -d dirname
+
+
+after u edit the file u back to zip in the war file
+ zip -r file *
