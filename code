@@ -1,0 +1,44 @@
+General Editing
+
+ctl + s = save file
+ctl + z = undo
+ctl + y = redo
+ctl + x = cut
+ctl + c = copy file
+ctl + v = paste
+
+Navigation
+
+ctl + p = quick open file
+ctl + tab = switch between open files
+ctl + g = go to line
+ctl + shift + e = explorer sidebar
+ctl + shift + f = search files
+ctl + space = trigger intellisence
+ctl + shift + space = trigger parameter hints
+alt + up (or) down = move line up/down
+alt +shift + up/down = copy line up/down
+ctl + / =toggle line comment
+
+Window Management
+
+ctl + shift + n =new Window
+ctl + shift + w =close window
+ctl + ' = toggle terminal 
+ctl + b =toggle sidebar visibility
+
+Debugging 
+
+F5 = start Debugging
+F9 = toggle breakpoint
+F10 = step over
+F11 = step into
+shift + F5 =stop Debugging
+
+File Management
+
+ctl + n = create a new file
+ctl + shift + t =reopen the last closed file
+ctl +  shift + s = save all open files
+ctl + o = open file
+ctl + w = close the current file
