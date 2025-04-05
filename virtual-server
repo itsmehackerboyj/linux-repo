@@ -1,0 +1,38 @@
+hey hi raj this msg for u because u find virtual server 
+like not mantory for aws server because the linux server using all of the devops tools like jenkins,docker and etc
+
+
+so now we talk about how to create virtual servers and its create for using docker
+
+first u install docker 
+
+pull docker file 
+
+* sudo apt install docker.io
+* docker pull ubuntu (u pull the ubuntu after u create container )
+   * docker run -itd --name server1 ubuntu (if u have more server use this type of method)
+   * docker exec -it server1 bash (now u run the virtual server , so u install these (apt install curl, apt install fontconfig openjdk-17-jre, apt install vim)
+
+so u finish the steps for server now u go to master jenkins after u follow these steps
+
+* Go to manage jenkins ->nodes -> new node (give node name) -> click permently agent and create
+* number of executors -> 1
+*remote root directoryu -> /home/jenkins (or) /opt/jenkins
+*labels -> docker (u give like the project)
+*usage -> use this node as much as possible
+*launch method -> launch agent by connecting it to the controller
+
+and save the node 
+
+* after u use the cmd in master machine(wget http://master-ip:port-no/jnlpJars/agent.jar(the (agent.jar) its use ur project propbly name)
+
+* after u save the node u see this type of msg 
+(echo 95b0ba007c4c7fe7f237f0b40430c550de9a1ffae04ec556c3b6d276a9491811 > secret-file
+curl -sO http://192.168.92.73:8081/jnlpJars/agent.jar
+java -jar agent.jar -url http://192.168.92.73:8081/ -secret @secret-file -name "new-node" -webSocket -workDir "/opt/jenkins")
+
+in this cmd u paste for slave machine like inside docker in ubuntu like this
+(docker -> ubuntu -> install java -> set path (/opt/jenkins))
+
+
+
